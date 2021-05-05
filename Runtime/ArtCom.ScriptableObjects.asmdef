@@ -1,7 +1,10 @@
 {
     "name": "ArtCom.ScriptableObjects",
     "rootNamespace": "",
-    "references": [],
+    "references": [
+        "ArtCom.ArtCom.TimelineUtilities.GameEventMarker",
+        "Unity.Timeline"
+    ],
     "includePlatforms": [],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
@@ -9,6 +12,12 @@
     "precompiledReferences": [],
     "autoReferenced": true,
     "defineConstraints": [],
-    "versionDefines": [],
+    "versionDefines": [
+        {
+            "name": "de.artcom.timelineutilities",
+            "expression": "0.0.0",
+            "define": "USE_TIMELINE_MARKER"
+        }
+    ],
     "noEngineReferences": false
 }
