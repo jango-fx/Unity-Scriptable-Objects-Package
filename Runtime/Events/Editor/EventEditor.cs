@@ -14,11 +14,13 @@ namespace ArtCom.ScriptableObjects.Events
         {
             base.OnInspectorGUI();
 
-            GUI.enabled = Application.isPlaying;
+            //GUI.enabled = Application.isPlaying;
 
             GameEvent e = target as GameEvent;
-            if (GUILayout.Button("Raise"))
+            if (GUILayout.Button("Raise")){
+                Debug.Log("➚ ["+e.name+"]");
                 e.Raise();
+            }
         }
     }
 }
