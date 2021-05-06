@@ -19,7 +19,7 @@ namespace ArtCom.ScriptableObjects.Events
         public void Raise()
         {
             if (verbose)
-                Debug.Log("➚ [" + e.name + "]");
+                Debug.Log("➚ [" + this.name + "]");
 
             for (int i = eventListeners.Count - 1; i >= 0; i--)
                 eventListeners[i].OnEventRaised();
