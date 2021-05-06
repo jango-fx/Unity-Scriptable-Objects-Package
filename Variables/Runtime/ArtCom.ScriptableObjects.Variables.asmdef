@@ -1,9 +1,7 @@
 {
-    "name": "ArtCom.ScriptableObjects",
+    "name": "ArtCom.ScriptableObjects.Variables",
     "rootNamespace": "",
     "references": [
-        "ArtCom.ArtCom.TimelineUtilities.GameEventMarker",
-        "Unity.Timeline"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

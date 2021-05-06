@@ -14,7 +14,7 @@ namespace ArtCom.ScriptableObjects.Events
         /// The list of listeners that this event will notify if it is raised.
         /// </summary>
         private readonly List<GameEventListener> eventListeners = new List<GameEventListener>();
-        public bool verbose = true;
+        public bool verbose = true; // TODO: make it work
 
         public void Raise()
         {
