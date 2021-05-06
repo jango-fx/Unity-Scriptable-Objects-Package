@@ -17,8 +17,10 @@ namespace ArtCom.ScriptableObjects.Events
             //GUI.enabled = Application.isPlaying;
 
             GameEvent e = target as GameEvent;
-            if (GUILayout.Button("Raise")){
-                Debug.Log("➚ ["+e.name+"]");
+            if (GUILayout.Button("Raise"))
+            {
+                if (e.verbose)
+                    Debug.Log("➚ [" + e.name + "]");
                 e.Raise();
             }
         }

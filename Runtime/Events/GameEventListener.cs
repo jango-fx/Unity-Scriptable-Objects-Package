@@ -27,6 +27,8 @@ namespace ArtCom.ScriptableObjects.Events
         public UnityEvent response = new UnityEvent();
         private bool eventAdded = false;
 
+        // TODO: autopopulate on creation
+        /*
         private void OnAwake()
         {
             if (!eventAdded)
@@ -37,7 +39,8 @@ namespace ArtCom.ScriptableObjects.Events
                 eventAdded = true;
             }
         }
-
+        */
+        
         private void OnEnable()
         {
             gameEvent.RegisterListener(this);
@@ -50,7 +53,8 @@ namespace ArtCom.ScriptableObjects.Events
 
         public void OnEventRaised()
         {
-            Debug.Log("➘ [" + gameEvent.name + "] => " + response.GetPersistentTarget(0) + "." + response.GetPersistentMethodName(0) + "()");
+            if (gameEvent.verbose)
+                Debug.Log("➘ [" + gameEvent.name + "] => " + response.GetPersistentTarget(0) + "." + response.GetPersistentMethodName(0) + "()");
             response.Invoke();
         }
 
