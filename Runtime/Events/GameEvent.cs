@@ -15,10 +15,13 @@ namespace ArtCom.ScriptableObjects.Events
         /// </summary>
         private readonly List<GameEventListener> eventListeners = new List<GameEventListener>();
         public bool verbose = true;
-        
+
         public void Raise()
         {
-            for(int i = eventListeners.Count -1; i >= 0; i--)
+            if (verbose)
+                Debug.Log("➚ [" + e.name + "]");
+
+            for (int i = eventListeners.Count - 1; i >= 0; i--)
                 eventListeners[i].OnEventRaised();
         }
 

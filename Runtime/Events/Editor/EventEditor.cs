@@ -19,8 +19,6 @@ namespace ArtCom.ScriptableObjects.Events
             GameEvent e = target as GameEvent;
             if (GUILayout.Button("Raise"))
             {
-                if (e.verbose)
-                    Debug.Log("➚ [" + e.name + "]");
                 e.Raise();
             }
         }
