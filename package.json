@@ -1,7 +1,7 @@
 {
-  "name": "de.artcom.scriptableobjects",
-  "version": "0.0.3",
-  "displayName": "ART+COM Scriptable Objects",
+  "name": "io.github.jango-fx.scriptableobjects",
+  "version": "0.0.4",
+  "displayName": "Unity Scriptable Objects",
   "description": "Implementation of Scriptable Objects as explained by roboryantron (Ryan Hipple) ",
   "unity": "2019.1",
   "dependencies": {},
@@ -10,7 +10,6 @@
   ],
   "author": {
     "name": "Felix Groll",
-    "email": "felix.groll@artcom.de",
-    "url": "https://www.artcom.de"
+    "url": "https://github.com/jango-fx"
   }
 }

@@ -1,5 +1,5 @@
 {
-    "name": "ArtCom.ScriptableObjects.Variables",
+    "name": "UnityUtils.ScriptableObjects.Variables",
     "rootNamespace": "",
     "references": [
     ],
@@ -12,7 +12,7 @@
     "defineConstraints": [],
     "versionDefines": [
         {
-            "name": "de.artcom.timelineutilities",
+            "name": "io.github.jango-fx.timelineutilities",
             "expression": "0.0.0",
             "define": "USE_TIMELINE_MARKER"
         }

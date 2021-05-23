@@ -4,7 +4,7 @@
 
 using System;
 
-namespace ArtCom.ScriptableObjects.Variables
+namespace UnityUtils.ScriptableObjects.Variables
 {
     [Serializable]
     public class FloatReference

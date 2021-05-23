@@ -1,7 +1,7 @@
 {
-    "name": "ArtCom.ScriptableObjects.Events.Editor",
+    "name": "UnityUtils.ScriptableObjects.Events.Editor",
     "references": [
-        "ArtCom.ScriptableObjects.Events"
+        "UnityUtils.ScriptableObjects.Events"
     ],
     "optionalUnityReferences": [],
     "includePlatforms": [

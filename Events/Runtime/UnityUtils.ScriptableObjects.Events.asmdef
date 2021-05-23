@@ -1,8 +1,8 @@
 {
-    "name": "ArtCom.ScriptableObjects.Events",
+    "name": "UnityUtils.ScriptableObjects.Events",
     "rootNamespace": "",
     "references": [
-        "ArtCom.ArtCom.TimelineUtilities.GameEventMarker",
+        "UnityUtils.TimelineUtilities.GameEventMarker",
         "Unity.Timeline"
     ],
     "includePlatforms": [],
@@ -14,7 +14,7 @@
     "defineConstraints": [],
     "versionDefines": [
         {
-            "name": "de.artcom.timelineutilities",
+            "name": "io.github.jango-fx.timelineutilities",
             "expression": "0.0.0",
             "define": "USE_TIMELINE_MARKER"
         }

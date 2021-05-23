@@ -7,10 +7,10 @@ using UnityEngine.Events;
 #if USE_TIMELINE_MARKER
 using UnityEngine.Playables;
 using UnityEngine.Timeline;
-using ArtCom.TimelineUtilities;
+using UnityUtils.TimelineUtilities;
 #endif
 
-namespace ArtCom.ScriptableObjects.Events
+namespace UnityUtils.ScriptableObjects.Events
 {
     [ExecuteInEditMode]
     public class GameEventListener : MonoBehaviour
@@ -61,7 +61,7 @@ namespace ArtCom.ScriptableObjects.Events
 #if USE_TIMELINE_MARKER
         public void OnNotify(Playable origin, INotification notification, object context)
         {
-            ArtCom.TimelineUtilities.GameEventMarker marker = notification as ArtCom.TimelineUtilities.GameEventMarker;
+            UnityUtils.TimelineUtilities.GameEventMarker marker = notification as UnityUtils.TimelineUtilities.GameEventMarker;
             GameEvent ge = (GameEvent) marker.gameEvent;
             if (marker == null)
                 return;

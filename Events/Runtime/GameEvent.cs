@@ -5,7 +5,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace ArtCom.ScriptableObjects.Events
+namespace UnityUtils.ScriptableObjects.Events
 {
     [CreateAssetMenu(menuName = "ScriptableObjects/GameEvent")]
     public class GameEvent : ScriptableObject

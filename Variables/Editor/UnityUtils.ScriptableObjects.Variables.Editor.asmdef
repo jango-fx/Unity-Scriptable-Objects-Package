@@ -1,7 +1,7 @@
 {
-    "name": "ArtCom.ScriptableObjects.Variables.Editor",
+    "name": "UnityUtils.ScriptableObjects.Variables.Editor",
     "references": [
-        "ArtCom.ScriptableObjects.Variables"
+        "UnityUtils.ScriptableObjects.Variables"
     ],
     "optionalUnityReferences": [],
     "includePlatforms": [
