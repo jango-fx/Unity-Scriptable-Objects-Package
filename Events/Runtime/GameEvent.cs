@@ -5,7 +5,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace UnityUtils.ScriptableObjects.Events
+namespace ƒx.UnityUtils.ScriptableObjects.Events
 {
     [CreateAssetMenu(menuName = "ScriptableObjects/GameEvent")]
     public class GameEvent : ScriptableObject
@@ -19,7 +19,7 @@ namespace UnityUtils.ScriptableObjects.Events
         public void Raise()
         {
             if (verbose)
-                Debug.Log("➚ [" + this.name + "]");
+                Debug.Log("|➚ [" + this.name + "]");
 
             for (int i = eventListeners.Count - 1; i >= 0; i--)
                 eventListeners[i].OnEventRaised();

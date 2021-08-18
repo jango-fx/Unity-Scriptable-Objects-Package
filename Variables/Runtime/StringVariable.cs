@@ -4,7 +4,7 @@
 
 using UnityEngine;
 
-namespace UnityUtils.ScriptableObjects.Variables
+namespace ƒx.UnityUtils.ScriptableObjects.Variables
 {
     [CreateAssetMenu(menuName = "ScriptableObjects/StringVariable")]
     public class StringVariable : ScriptableObject

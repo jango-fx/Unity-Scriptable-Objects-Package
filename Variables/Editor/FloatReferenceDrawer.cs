@@ -5,7 +5,7 @@
 using UnityEditor;
 using UnityEngine;
 
-namespace UnityUtils.ScriptableObjects.Variables
+namespace ƒx.UnityUtils.ScriptableObjects.Variables
 {
     [CustomPropertyDrawer(typeof(FloatReference))]
     public class FloatReferenceDrawer : PropertyDrawer

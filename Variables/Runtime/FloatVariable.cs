@@ -4,7 +4,7 @@
 
 using UnityEngine;
 
-namespace UnityUtils.ScriptableObjects.Variables
+namespace ƒx.UnityUtils.ScriptableObjects.Variables
 {
     [CreateAssetMenu(menuName = "ScriptableObjects/FloatVariable")]
     public class FloatVariable : ScriptableObject

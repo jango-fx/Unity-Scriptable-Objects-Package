@@ -7,10 +7,10 @@ using UnityEngine.Events;
 #if USE_TIMELINE_MARKER
 using UnityEngine.Playables;
 using UnityEngine.Timeline;
-using UnityUtils.TimelineUtilities;
+using ƒx.UnityUtils.Timeline;
 #endif
 
-namespace UnityUtils.ScriptableObjects.Events
+namespace ƒx.UnityUtils.ScriptableObjects.Events
 {
     [ExecuteInEditMode]
     public class GameEventListener : MonoBehaviour
@@ -25,7 +25,7 @@ namespace UnityUtils.ScriptableObjects.Events
 
         [Tooltip("Response to invoke when Event is raised.")]
         public UnityEvent response = new UnityEvent();
-        private bool eventAdded = false;
+        // private bool eventAdded = false;
 
         // TODO: autopopulate on creation
         /*
@@ -54,7 +54,7 @@ namespace UnityUtils.ScriptableObjects.Events
         public void OnEventRaised()
         {
             if (gameEvent.verbose)
-                Debug.Log("➘ [" + gameEvent.name + "] => " + response.GetPersistentTarget(0) + "." + response.GetPersistentMethodName(0) + "()");
+                Debug.Log("➘| [" + gameEvent.name + "] => " + response.GetPersistentTarget(0) + "." + response.GetPersistentMethodName(0) + "()");
             response.Invoke();
         }
 

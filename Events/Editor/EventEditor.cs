@@ -5,7 +5,7 @@
 using UnityEditor;
 using UnityEngine;
 
-namespace UnityUtils.ScriptableObjects.Events
+namespace ƒx.UnityUtils.ScriptableObjects.Events
 {
     [CustomEditor(typeof(GameEvent), editorForChildClasses: true)]
     public class EventEditor : Editor

@@ -1,7 +1,7 @@
 {
-  "name": "io.github.jango-fx.scriptableobjects",
-  "version": "0.0.4",
-  "displayName": "Unity Scriptable Objects",
+  "name": "io.github.jango-fx.unityutils.scriptableobjects",
+  "version": "2.0.0",
+  "displayName": "Unity Utilities Scriptable Objects Package",
   "description": "Implementation of Scriptable Objects as explained by roboryantron (Ryan Hipple) ",
   "unity": "2019.1",
   "dependencies": {},
@@ -10,6 +10,6 @@
   ],
   "author": {
     "name": "Felix Groll",
-    "url": "https://github.com/jango-fx"
+    "url": "https://jango-fx.github.io"
   }
 }
