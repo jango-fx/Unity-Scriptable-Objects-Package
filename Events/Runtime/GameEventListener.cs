@@ -25,7 +25,7 @@ namespace UnityUtils.ScriptableObjects.Events
 
         [Tooltip("Response to invoke when Event is raised.")]
         public UnityEvent response = new UnityEvent();
-        private bool eventAdded = false;
+        // private bool eventAdded = false;
 
         // TODO: autopopulate on creation
         /*
@@ -33,14 +33,40 @@ namespace UnityUtils.ScriptableObjects.Events
         {
             if (!eventAdded)
             {
-                GameObject audioSrc = GetComponent<GameObject>();
-                UnityAction methodDelegate = System.Delegate.CreateDelegate(typeof(UnityAction), audioSrc, "SendMessage") as UnityAction;
+                GameObject go = GetComponent<GameObject>();
+                UnityAction methodDelegate = System.Delegate.CreateDelegate(typeof(UnityAction), go, "SendMessage") as UnityAction;
                 UnityEditor.Events.UnityEventTools.AddPersistentListener(response, methodDelegate);
                 eventAdded = true;
             }
         }
         */
-        
+
+        void Reset()
+        {
+            UnityEditor.Events.UnityEventTools.AddVoidPersistentListener(response, null);
+            EnableEditMode();
+        }
+
+        /*
+        void OnValidate()
+        {
+            if (emitInEditor)
+                EnableEditMode();
+            else
+                DisableEditMode();
+        }
+        */
+
+        void EnableEditMode()
+        {
+            response.SetPersistentListenerState(0, UnityEventCallState.EditorAndRuntime);
+        }
+
+        void DisableEditMode()
+        {
+            response.SetPersistentListenerState(0, UnityEventCallState.RuntimeOnly);
+        }
+
         private void OnEnable()
         {
             gameEvent.RegisterListener(this);
