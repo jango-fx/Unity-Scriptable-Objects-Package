@@ -84,6 +84,7 @@ namespace UnityUtils.ScriptableObjects.Events
             response.Invoke();
         }
 
+//! BUG: only works if attached to the same GameObject as the Timeline !?
 #if USE_TIMELINE_MARKER
         public void OnNotify(Playable origin, INotification notification, object context)
         {
