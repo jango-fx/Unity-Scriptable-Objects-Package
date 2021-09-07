@@ -1,12 +1,10 @@
 {
     "name": "UnityUtils.ScriptableObjects.Events",
-    "rootNamespace": "",
     "references": [
-        "UnityUtils.TimelineUtilities.GameEventMarker",
-        "Unity.Timeline"
+        "Unity.Timeline",
+        "ƒx.UnityUtils.Timeline"
     ],
     "includePlatforms": [],
-    "excludePlatforms": [],
     "allowUnsafeCode": false,
     "overrideReferences": false,
     "precompiledReferences": [],
@@ -14,7 +12,7 @@
     "defineConstraints": [],
     "versionDefines": [
         {
-            "name": "io.github.jango-fx.timelineutilities",
+            "name": "io.github.jango-fx.unityutils.timeline",
             "expression": "0.0.0",
             "define": "USE_TIMELINE_MARKER"
         }
