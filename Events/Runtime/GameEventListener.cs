@@ -61,7 +61,7 @@ namespace ƒx.UnityUtils.ScriptableObjects.Events
 #if USE_TIMELINE_MARKER
         public void OnNotify(Playable origin, INotification notification, object context)
         {
-            UnityUtils.TimelineUtilities.GameEventMarker marker = notification as UnityUtils.TimelineUtilities.GameEventMarker;
+            GameEventMarker marker = notification as GameEventMarker;
             GameEvent ge = (GameEvent) marker.gameEvent;
             if (marker == null)
                 return;

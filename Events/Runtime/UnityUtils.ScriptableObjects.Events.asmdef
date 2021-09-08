@@ -1,0 +1,21 @@
+{
+    "name": "UnityUtils.ScriptableObjects.Events",
+    "references": [
+        "Unity.Timeline",
+        "ƒx.UnityUtils.Timeline"
+    ],
+    "includePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [
+        {
+            "name": "io.github.jango-fx.unityutils.timeline",
+            "expression": "0.0.0",
+            "define": "USE_TIMELINE_MARKER"
+        }
+    ],
+    "noEngineReferences": false
+}
