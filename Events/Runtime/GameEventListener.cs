@@ -10,7 +10,7 @@ using UnityEngine.Timeline;
 using ƒx.UnityUtils.Timeline;
 #endif
 
-namespace UnityUtils.ScriptableObjects.Events
+namespace ƒx.UnityUtils.ScriptableObjects.Events
 {
     [ExecuteInEditMode]
     public class GameEventListener : MonoBehaviour
@@ -80,7 +80,7 @@ namespace UnityUtils.ScriptableObjects.Events
         public void OnEventRaised()
         {
             if (gameEvent.verbose)
-                Debug.Log("➘ [" + gameEvent.name + "] => " + response.GetPersistentTarget(0) + "." + response.GetPersistentMethodName(0) + "()");
+                Debug.Log("➘| [" + gameEvent.name + "] => " + response.GetPersistentTarget(0) + "." + response.GetPersistentMethodName(0) + "()");
             response.Invoke();
         }
 

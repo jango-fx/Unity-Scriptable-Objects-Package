@@ -4,7 +4,7 @@
 
 using System;
 
-namespace UnityUtils.ScriptableObjects.Variables
+namespace ƒx.UnityUtils.ScriptableObjects.Variables
 {
     [Serializable]
     public class FloatReference
