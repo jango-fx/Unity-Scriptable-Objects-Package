@@ -1,6 +1,6 @@
 {
   "name": "io.github.jango-fx.unityutils.scriptableobjects",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "displayName": "Unity Utilities Scriptable Objects Package",
   "description": "Implementation of Scriptable Objects as explained by roboryantron (Ryan Hipple) ",
   "unity": "2019.1",
