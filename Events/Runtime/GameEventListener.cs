@@ -33,14 +33,40 @@ namespace ƒx.UnityUtils.ScriptableObjects.Events
         {
             if (!eventAdded)
             {
-                GameObject audioSrc = GetComponent<GameObject>();
-                UnityAction methodDelegate = System.Delegate.CreateDelegate(typeof(UnityAction), audioSrc, "SendMessage") as UnityAction;
+                GameObject go = GetComponent<GameObject>();
+                UnityAction methodDelegate = System.Delegate.CreateDelegate(typeof(UnityAction), go, "SendMessage") as UnityAction;
                 UnityEditor.Events.UnityEventTools.AddPersistentListener(response, methodDelegate);
                 eventAdded = true;
             }
         }
         */
-        
+
+        void Reset()
+        {
+            UnityEditor.Events.UnityEventTools.AddVoidPersistentListener(response, null);
+            EnableEditMode();
+        }
+
+        /*
+        void OnValidate()
+        {
+            if (emitInEditor)
+                EnableEditMode();
+            else
+                DisableEditMode();
+        }
+        */
+
+        void EnableEditMode()
+        {
+            response.SetPersistentListenerState(0, UnityEventCallState.EditorAndRuntime);
+        }
+
+        void DisableEditMode()
+        {
+            response.SetPersistentListenerState(0, UnityEventCallState.RuntimeOnly);
+        }
+
         private void OnEnable()
         {
             gameEvent.RegisterListener(this);
@@ -58,6 +84,7 @@ namespace ƒx.UnityUtils.ScriptableObjects.Events
             response.Invoke();
         }
 
+//! BUG: only works if attached to the same GameObject as the Timeline !?
 #if USE_TIMELINE_MARKER
         public void OnNotify(Playable origin, INotification notification, object context)
         {
